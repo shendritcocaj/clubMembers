@@ -20,11 +20,15 @@ const Coments = () => {
       {" "}
       <p>All comments:</p>
       {comments.map((comment) => (
-        <>
-          <p className="comment">
-            Nr.{comment.id}:{comment.body}
-          </p>
-        </>
+        <p className="comment">
+          {" "}
+          <strong>
+            {" "}
+            {comment.id}. Name: {comment.name}
+          </strong>
+          <br />
+          {comment.body}
+        </p>
       ))}
     </div>
   );
